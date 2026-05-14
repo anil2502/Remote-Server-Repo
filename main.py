@@ -293,7 +293,7 @@ async def roll_dice(n_dice: int = 1) -> list[int]:
     """Roll n_dice 6-sided dice and return the results."""
     return [random.randint(1, 6) for i in range(n_dice)]
 
-@mcp.toll()
+@mcp.tool()
 async def tavily_search(query: str) -> str:
     """
     Search the web using Tavily.
