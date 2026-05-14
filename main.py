@@ -288,12 +288,12 @@ client = TavilyClient(
 
 #NOTE:- Rolling  dice With N number of times
 
-@mcp.tool
+@mcp.tool()
 async def roll_dice(n_dice: int = 1) -> list[int]:
     """Roll n_dice 6-sided dice and return the results."""
-    return [random.ranint(1, 6) for i in range(n_dice)]
+    return [random.randint(1, 6) for i in range(n_dice)]
 
-@mcp.toll
+@mcp.toll()
 async def tavily_search(query: str) -> str:
     """
     Search the web using Tavily.
