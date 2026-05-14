@@ -40,7 +40,7 @@ from tavily import TavilyClient
 mcp = FastMCP("ExpenseTracker")
 
 client = TavilyClient(
-    api_key = os.environ["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"]
+    api_key = "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"
 )
 
 # # =========================================================
